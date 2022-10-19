@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Review from './Review'
+import people from './data'
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <article className='w-full h-screen flex flex-col justify-center items-center'>
+      <h1 className='text-2xl font-bold my-4 underline'>Our Reviews</h1>
+      <Review />
+    </article>
+  )
 }
 
-export default App;
+export default App
